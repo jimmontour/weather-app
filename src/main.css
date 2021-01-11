@@ -1,0 +1,21 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.weather-search {
+   width: 750px;
+   margin: 0 auto;
+   height: 2rem;
+   display: flex;
+   margin-top: 10rem;
+}
+
+.weather-search__input {
+   width: 75%;
+}
+
+.weather-search__btn {
+   width: 25%;
+}

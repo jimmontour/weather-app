@@ -1,4 +1,4 @@
-const cityName = 'buffalo';
+import searchCity from './searchCity';
 
 export const cityInfo = {
   name: '',
@@ -11,7 +11,7 @@ export const cityInfo = {
   windSpeed: '',
 };
 
-export default async function getWeather() {
+export default async function getWeather(cityName) {
   try {
     const weatherRequest = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=9fea2eee139f9e0daabf0cf1f712a5fa`,
@@ -27,8 +27,7 @@ export default async function getWeather() {
     cityInfo.tempMin = weatherData.main.temp_min;
     cityInfo.icon = weatherData.icon;
     cityInfo.windSpeed = weatherData.wind.speed;
-
-    //  return an object with the relevant data so a handler can print
+    console.log(cityInfo);
   } catch (err) {
     console.log(err);
   }
