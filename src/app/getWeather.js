@@ -1,4 +1,6 @@
 import searchCity from './searchCity';
+import printWeather from './printWeather';
+import updateBackground from './updateBackground';
 
 export const cityInfo = {
   name: '',
@@ -9,6 +11,7 @@ export const cityInfo = {
   tempMax: '',
   tempMin: '',
   windSpeed: '',
+  condition: '',
 };
 
 export default async function getWeather(cityName) {
@@ -18,6 +21,7 @@ export default async function getWeather(cityName) {
       { mode: 'cors' }
     );
     const weatherData = await weatherRequest.json();
+    console.log(weatherData);
     cityInfo.name = weatherData.name;
     cityInfo.temp = weatherData.main.temp;
     cityInfo.feelsLike = weatherData.main.feels_like;
@@ -27,8 +31,8 @@ export default async function getWeather(cityName) {
     cityInfo.tempMin = weatherData.main.temp_min;
     cityInfo.icon = weatherData.icon;
     cityInfo.windSpeed = weatherData.wind.speed;
-    // initiate printWeather
-  } catch (err) {
-    console.log(err);
-  }
+    cityInfo.condition = weatherData.weather[0].main;
+    printWeather();
+    updateBackground();
+  } catch (err) {}
 }

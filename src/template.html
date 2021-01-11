@@ -11,56 +11,58 @@
 </head>
 
 <body>
-   <header>
-      <p>header here</p>
-   </header>
-   <main>
-      <div class="city-info">
-         <div class="city-name">
-            <h1>Buffalo Weather Report</h1>
-         </div>
-         <div class="city-temp-container">
-            <div class="city-temp">
-               <div class="city-catergory-title">Temperature:</div>
-               <div class="city-catergory-info">72</div>
+   <div class="container">
+      <header>
+         <p>Created by Jim Montour for The Odin Project. Check out the Repo.</p>
+      </header>
+      <main>
+         <div class="city-info">
+            <div class="city-name">
+               <h1><span id="city-title"></span> Weather Report</h1>
             </div>
+            <div class="city-temp-container">
+               <div class="city-temp">
+                  <div class="city-catergory-title">Temperature:</div>
+                  <div class="city-catergory-info" id="temp"></div>
+               </div>
 
-            <div class="city-feels-like">
-               <div class="city-catergory-title">Temperature:</div>
-               <div class="city-catergory-info">72</div>
+               <div class="city-feels-like">
+                  <div class="city-catergory-title">Feels Like:</div>
+                  <div class="city-catergory-info" id="feels-like"></div>
+               </div>
+               <div class="city-temp-max">
+                  <div class="city-catergory-title">High Of:</div>
+                  <div class="city-catergory-info" id="high-of"></div>
+               </div>
+               <div class="city-temp-min">
+                  <div class="city-catergory-title">Low of :</div>
+                  <div class="city-catergory-info" id="low-of"></div>
+               </div>
             </div>
-            <div class="city-temp-max">
-               <div class="city-catergory-title">Temperature:</div>
-               <div class="city-catergory-info">72</div>
-            </div>
-            <div class="city-temp-min">
-               <div class="city-catergory-title">Temperature:</div>
-               <div class="city-catergory-info">72</div>
+            <div class="city-wind-container">
+               <div class="city-humidity">
+                  <div class="city-catergory-title">Humidity:</div>
+                  <div class="city-catergory-info" id="humidity"></div>
+               </div>
+               <div class="city-pressure">
+                  <div class="city-catergory-title">Pressure:</div>
+                  <div class="city-catergory-info" id="pressure"></div>
+               </div>
+               <div class="city-wind-speed">
+                  <div class="city-catergory-title">Wind Speed:</div>
+                  <div class="city-catergory-info" id="wind-speed"></div>
+               </div>
             </div>
          </div>
-         <div class="city-wind-container">
-            <div class="city-humidity">
-               <div class="city-catergory-title">Temperature:</div>
-               <div class="city-catergory-info">72</div>
-            </div>
-            <div class="city-pressure">
-               <div class="city-catergory-title">Temperature:</div>
-               <div class="city-catergory-info">72</div>
-            </div>
-            <div class="city-wind-speed">
-               <div class="city-catergory-title">Temperature:</div>
-               <div class="city-catergory-info">72</div>
-            </div>
-         </div>
-      </div>
 
-      <div class="weather-search">
-         <input type="text" placeholder="Search for a City" class="weather-search__input">
-         <button class="weather-search__btn">Get Weather</button>
-      </div>
-   </main>
-   <footer>
-   </footer>
+         <div class="weather-search">
+            <input type="text" placeholder="Search for a City" class="weather-search__input">
+            <button class="weather-search__btn">Get Weather</button>
+         </div>
+      </main>
+      <footer>
+      </footer>
+   </div>
 </body>
 
 </html>

@@ -13,8 +13,6 @@ const input = document.querySelector('.weather-search__input');
 submit.addEventListener('click', () => {
   cityName = input.value.toLowerCase();
   getWeather(`${cityName}`);
-  console.log(cityInfo.temp);
-  console.log(cityInfo.feelsLike);
 });
 
 // Run:
