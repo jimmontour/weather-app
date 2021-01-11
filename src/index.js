@@ -11,10 +11,10 @@ const input = document.querySelector('.weather-search__input');
 
 // Event Delegation:
 submit.addEventListener('click', () => {
-  console.log('clicked');
   cityName = input.value.toLowerCase();
-  console.log(cityName);
   getWeather(`${cityName}`);
+  console.log(cityInfo.temp);
+  console.log(cityInfo.feelsLike);
 });
 
 // Run:

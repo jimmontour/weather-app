@@ -27,7 +27,7 @@ export default async function getWeather(cityName) {
     cityInfo.tempMin = weatherData.main.temp_min;
     cityInfo.icon = weatherData.icon;
     cityInfo.windSpeed = weatherData.wind.speed;
-    console.log(cityInfo);
+    // initiate printWeather
   } catch (err) {
     console.log(err);
   }
