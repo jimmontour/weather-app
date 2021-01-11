@@ -13,3 +13,4 @@ Weather App:
    Notes:
       ☐ need to move the api info to an object for a handler and printer
       ☐ maybe unsplash for background image based in search
+      ☐ replace temp fix for background with unsplash api

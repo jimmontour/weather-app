@@ -10,9 +10,9 @@ body {
 }
 
 .container {
-      min-height:100%;
-  background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("app/assets/clouds-background.jpg");
-  background-size:cover;
+   min-height:100%;
+   background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("app/assets/clouds-background.jpg");
+   background-size: cover;
 }
 
 header {
