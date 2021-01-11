@@ -9,3 +9,6 @@ Weather App:
       ☐ You should change the look of the page based on the data, maybe by changing the color of the background or by adding images that describe the weather.
    ☐ Optional: add a ‘loading’ component that displays from the time the form is submitted until the information comes back from the API.
    ☐ Push that baby to github and share your solution below!
+
+   Notes:
+      ☐ need to move the api info to an object for a handler and printer
