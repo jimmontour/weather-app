@@ -25,6 +25,6 @@ export default async function getWeather(cityName) {
     printWeather();
     updateBackground();
   } catch (err) {
-    console.log(err);
+    alert(err);
   }
 }
