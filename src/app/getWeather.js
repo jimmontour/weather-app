@@ -17,7 +17,6 @@ export default async function getWeather(cityName) {
       { mode: 'cors' }
     );
     const weatherData = await weatherRequest.json();
-    console.log(weatherData);
     cityInfo.name = weatherData.name;
     cityInfo.temp = weatherData.main.temp;
     cityInfo.tempMax = weatherData.main.temp_max;

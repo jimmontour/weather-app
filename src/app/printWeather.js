@@ -7,7 +7,6 @@ const cityLowOf = document.getElementById('low-of');
 const cityTitle = document.getElementById('city-title');
 
 export default function printWeather() {
-  console.log(cityInfo);
   cityTemp.innerText = cityInfo.temp;
   cityHighOf.innerText = cityInfo.tempMax;
   cityLowOf.innerText = cityInfo.tempMin;
