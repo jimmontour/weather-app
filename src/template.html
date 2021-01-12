@@ -5,64 +5,50 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Sansita&family=Satisfy&display=swap"
-      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans&display=swap" rel="stylesheet">
    <title>Weather App</title>
 </head>
 
 <body>
    <div class="container">
-      <header>
-         <p>Created by Jim Montour for The Odin Project. Check out the Repo.</p>
-      </header>
-      <main>
-         <div class="city-info">
-            <div class="city-name">
-               <h1><span id="city-title"></span> Weather Report</h1>
-            </div>
-            <div class="city-temp-container">
-               <div class="city-temp">
-                  <div class="city-catergory-title">Temperature:</div>
-                  <div class="city-catergory-info" id="temp"></div>
+      <div class="weather-image">
+      </div>
+      <div class="info-container">
+         <main>
+            <div class="city-info">
+               <div class="city-name">
+                  <div class="city-temp" id="temp">75°F</div>
+               </div>
+               <div class="city-and-temp">
+                  <div class="title-card">
+                     <p><span id="city-title"></span>BUFFALO</p>
+                  </div>
+                  <div class="high-low">
+                     <div class="city-catergory-info" id="low-of">35°F
+                     </div>
+                     <div> -
+                     </div>
+                     <div class="city-catergory-info" id="high-of"> 80°F
+                     </div>
+                  </div>
                </div>
 
-               <div class="city-feels-like">
-                  <div class="city-catergory-title">Feels Like:</div>
-                  <div class="city-catergory-info" id="feels-like"></div>
+               <div class="weather-description">
+                  You could get away with a T-shirt...maybe?
                </div>
-               <div class="city-temp-max">
-                  <div class="city-catergory-title">High Of:</div>
-                  <div class="city-catergory-info" id="high-of"></div>
-               </div>
-               <div class="city-temp-min">
-                  <div class="city-catergory-title">Low of :</div>
-                  <div class="city-catergory-info" id="low-of"></div>
-               </div>
-            </div>
-            <div class="city-wind-container">
-               <div class="city-humidity">
-                  <div class="city-catergory-title">Humidity:</div>
-                  <div class="city-catergory-info" id="humidity"></div>
-               </div>
-               <div class="city-pressure">
-                  <div class="city-catergory-title">Pressure:</div>
-                  <div class="city-catergory-info" id="pressure"></div>
-               </div>
-               <div class="city-wind-speed">
-                  <div class="city-catergory-title">Wind Speed:</div>
-                  <div class="city-catergory-info" id="wind-speed"></div>
-               </div>
-            </div>
-         </div>
 
-         <div class="weather-search">
-            <input type="text" placeholder="Search for a City" class="weather-search__input">
-            <button class="weather-search__btn">Get Weather</button>
-         </div>
-      </main>
-      <footer>
-      </footer>
+               <div class="weather-search">
+                  <input type="text" placeholder="Search for a City" class="weather-search__input">
+                  <button class="weather-search__btn">Get Weather</button>
+               </div>
+         </main>
+         <footer>
+            <p>Created by <a href="">Jim Montour</a> for <a href="">The Odin Project</a>. Check out the Repo on <a
+                  href="">Github</a>.</p>
+         </footer>
+      </div>
    </div>
+
 </body>
 
 </html>
