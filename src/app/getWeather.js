@@ -5,12 +5,8 @@ import updateBackground from './updateBackground';
 export const cityInfo = {
   name: '',
   temp: '',
-  feelsLike: '',
-  humidity: '',
-  pressure: '',
   tempMax: '',
   tempMin: '',
-  windSpeed: '',
   condition: '',
 };
 
@@ -24,15 +20,12 @@ export default async function getWeather(cityName) {
     console.log(weatherData);
     cityInfo.name = weatherData.name;
     cityInfo.temp = weatherData.main.temp;
-    cityInfo.feelsLike = weatherData.main.feels_like;
-    cityInfo.humidity = weatherData.main.humidity;
-    cityInfo.pressure = weatherData.main.pressure;
     cityInfo.tempMax = weatherData.main.temp_max;
     cityInfo.tempMin = weatherData.main.temp_min;
-    cityInfo.icon = weatherData.icon;
-    cityInfo.windSpeed = weatherData.wind.speed;
     cityInfo.condition = weatherData.weather[0].main;
     printWeather();
     updateBackground();
-  } catch (err) {}
+  } catch (err) {
+    console.log(err);
+  }
 }
